@@ -1,0 +1,184 @@
+/* cta in main page */
+/* footer in main and pricing page */
+
+$colorBG: #eef2f5;
+$colorBG-main: rgb(44, 86, 201);
+$color-faq: #949494;
+$color-faq-border: #dedee1;
+$fontW-highlight: 700;
+$marginLR: 20px;
+$text-D: text-decoration;
+$media-WH: 25px;
+
+@mixin link-hover {
+    text-decoration: underline;
+}
+
+@mixin font-awesome($code) {
+    content: $code;
+    font-family: "Font Awesome 6 Free";
+    font-weight: $fontW-highlight;
+    margin: 0 $marginLR;
+}
+
+@mixin a1 {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        @include link-hover;
+    }
+}
+
+.cta {
+    text-align: center;
+    padding: 45px 30px 50px;
+    background-color: $colorBG;
+    .sign_up {
+        font-weight: $fontW-highlight;
+        font-size: 17px;
+        &::after {
+            content: "\f178";
+            font-family: "Font Awesome 6 Free";
+            font-weight: $fontW-highlight;
+        }
+    }
+    a {
+        font-weight: $fontW-highlight;
+        font-size: 13px;
+        #{$text-D}: none;
+        color: white;
+        padding: 17px 15px;
+        background-color: orange;
+        border-radius: 3px;
+        &:hover {
+            @include link-hover;
+        }
+    }
+}
+
+$medias: github facebook instagram youtube twitter linkedin;
+footer {
+    background-color: $colorBG-main;
+    line-height: 1.4;
+    color: white;
+    padding: 50px 0;
+    .other_details {
+        display: flex;
+        .media {
+            height: 160px;
+            width: 308px;
+            .weather_logo {
+                width: 197px;
+                height: 35px;
+                display: block;
+                margin-bottom: 20px;
+            }
+            @each $media in $medias {
+                .#{$media}_logo img {
+                    width: $media-WH;
+                    height: $media-WH;
+                    padding: 0 3px;
+                }
+            }
+        }
+        .details {
+            display: flex;
+            font-size: 14px;
+            ul {
+                list-style-type: none;
+                li {
+                    width: 196px;
+                    height: 30px;
+                    a {
+                        @include a1;
+                    }
+                }
+                .heading {
+                    font-weight: $fontW-highlight;
+                    margin-bottom: 10px;
+                }
+
+            }
+        }
+    }
+    .terms {
+        .term_details {
+            text-align: center;
+            margin: 70px 0 15px;
+            font-size: 14px;
+            a {
+                @include a1;
+            }
+        }
+        .rights {
+            @extend .term_details;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+
+}
+
+/* FAQ section in pricing page */
+.faq {
+    line-height: 1.4;
+    padding: 40px 10px;
+    h2 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+    .fre_questions {
+        display: flex;
+        justify-content: center;
+        .faq_left {
+            width: 500px;
+            margin-right: 25px;
+            .faq_data {
+                margin-bottom: 35px;
+                h3 {
+                    color: $color-faq;
+                    margin: 20px 0 10px;
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                    padding: 10px 0;
+                    border-bottom: 1px solid $color-faq-border; 
+                    &::after {
+                        @include font-awesome("\2b");
+                        float: right;
+                        color: $color-faq;
+                        margin: 0;
+                    }
+                    &:hover::after {
+                        color: rgb(64, 109, 123);
+                    }
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            & > a {
+                color: #7e8e9e;
+                text-decoration: none;
+                position: relative;
+                &::after {
+                    @include font-awesome("\f178");
+                    position: absolute;
+                    top: 0;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:hover::after {
+                    text-decoration: none;
+                }
+            }
+        }
+        .faq_right {
+            @extend .faq_left;
+        }
+    }
+
+}

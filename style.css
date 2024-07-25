@@ -1,0 +1,1485 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  background-color: transparent;
+  height: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 10px;
+  font-size: 15px;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.logIn,
+.signUp {
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.status_icon::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #009e4d;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.logIn {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.signUp {
+  background-color: orange;
+}
+
+.headerMain {
+  padding: 70px 20px 140px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction {
+  width: 500px;
+  height: 300px;
+}
+
+.currentWeather {
+  width: 492px;
+  height: 300px;
+  border: 4px solid #adccdf;
+  background-image: linear-gradient(225deg, orange, purple);
+  border-radius: 10px;
+}
+
+.webName {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.webSummary {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.honor {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 17px;
+}
+
+.honor::before {
+  content: "\f091";
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
+  margin: 0 3px;
+}
+
+.webRec {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+button[class="use"] {
+  background-color: orange;
+  padding: 15px 20px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+.useLink {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+.free {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.location {
+  text-align: center;
+  display: block;
+  margin: 15px 0;
+}
+
+.currentDetail .left::before {
+  content: "\f185";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.currentDetail .left,
+.currentDetail .center,
+.currentDetail .right {
+  width: 150px;
+  text-align: center;
+}
+
+.currentDetail .center {
+  font-size: 32px;
+  line-height: 75px;
+}
+
+.currentDetail {
+  display: flex;
+  margin: 30px;
+}
+
+.currentDetail .right {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px 0 10px 35px;
+  font-weight: 100;
+}
+
+.weekDetail {
+  display: flex;
+  margin: 25px 30px 30px 30px;
+  justify-content: space-between;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.weatherOne::before,
+.weatherFive::before {
+  content: "\f0c2";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.weatherTwo::before,
+.weatherThree::before,
+.weatherFour::before {
+  content: "\f743";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.day > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.deg {
+  display: block;
+  margin-top: 20px;
+}
+
+header {
+  background-image: url("https://weatherstack.com/site_images/mountains.svg"),
+    linear-gradient(135deg, red 0, blue 100%);
+  background-size: cover;
+}
+
+.customers {
+  margin-bottom: 30px;
+  background-color: #eff2f5;
+}
+
+.customer {
+  height: 50px;
+  padding: 10px;
+}
+
+.del, .mic {
+  width: 160px;
+}
+
+.wb {
+  width: 90px;
+}
+
+.wawa {
+  width: 110px;
+}
+
+.sch {
+  width: 160px;
+}
+
+.eri {
+  width: 90px;
+}
+
+
+.customerList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.happyCust {
+  padding-right: 50px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.strengths .realtime::before {
+  content: "\f017";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+
+.strengths .locations::before {
+  content: "\f5a0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.strengths .uptime::before {
+  content: "\f62a";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.strengths .price::before {
+  content: "\f02c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h5 {
+  margin: 15px 0;
+}
+
+.strengths {
+  margin: 40px 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.strengthsList {
+  display: flex;
+  padding: 20px 10px;
+  border-radius: 5px;
+  background-color: #eff2f5;
+}
+
+.strength {
+  padding: 20px 10px;
+  margin: 0 10px;
+  background-color: #ebeff4;
+  border-radius: 5px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_feature {
+  margin: 25px 0 65px;
+}
+
+.feature_left{
+  width: 440px;
+}
+
+.feature_right {
+  width: 635px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+.feature_left p {
+  margin: 20px 0;
+}
+
+.feature_list {
+  list-style-type: none;
+}
+
+.feature_list li {
+  line-height: 1.5;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.feature_left .realtime::before {
+  content: "\e4bb";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.feature_left .historical::before {
+  content: "\f1da";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.feature_left .forecast::before {
+  content: "\f274";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.feature_left .autocomplete::before {
+  content: "\f124";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 20px;
+  color: black;
+}
+.feature_left .bulk::before {
+  content: "\f0ca";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.feature_right img {
+  width: 635px;
+  height: 315px;
+}
+
+.main_methods {
+  padding: 40px 0;
+  border: 1px solid black;
+  background-image: url("https://weatherstack.com/site_images/bg_waves_4.svg");
+  background-color: rgb(44, 86, 201);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.methods {
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  color: white;
+}
+
+.methods .example{
+  border-radius: 20px;
+  width: 100px;
+  display: block;
+  margin: 0 auto 35px;
+  padding: 10px;
+  background-color: rgba(230, 225, 225, 0.3);
+  text-align: center;
+  font-weight: bold;
+}
+
+.methods h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.methods h5 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.methods > ul {
+  list-style-type: none;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 675px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.wea_his, .wea_fore {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.cur_wea {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.methods > ul > li {
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  padding: 16px 10px 18px;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.methods > ul li:last-child {
+  border: none;
+}
+
+.methods > ul li:first-child {
+  background-color: orange;
+}
+
+.result {
+  background-color: rgb(35, 46, 93);
+  width: 675px;
+  margin: 20px auto 0;
+  color: #d2c922;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.result span {
+  color: #23c947;
+}
+
+.more_features_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  line-height: 20px;
+}
+
+.more_features_list li {
+  width: 330px;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11);
+}
+
+.more_features_list {
+  list-style-type: none;
+}
+
+.reliable,
+.flexible {
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.lightning,
+.security {
+  margin: 0 5px 15px;
+}
+
+.scalable,
+.documentation {
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.more_features_list span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.more_features_list p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.reliable::before {
+  content: "\f1c0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.lightning::before {
+  content: "\f625";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.scalable::before {
+  content: "\f424";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.flexible::before {
+  content: "\f00e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.security::before {
+  content: "\f3ed";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.documentation::before {
+  content: "\f02d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.grid {
+  margin: 40px auto 50px;
+}
+
+.grid h4,
+.grid h5 {
+  text-align: center;
+}
+
+.grid h4 {
+  font-weight: 600;
+}
+
+.grid h5 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 20px auto 45px;
+}
+
+.grid ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.daimler {
+  background-image: url("https://weatherstack.com/site_images/client_white_daimler.svg");
+  background-color: #263e6a;
+  width: 250px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 175px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.deloitte {
+  background-image: url("https://weatherstack.com/site_images/client_deloitte.svg");
+  background-color: #eef2f5;
+  width: 250px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 175px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.ericsson {
+  background-image: url("https://weatherstack.com/site_images/client_white_ericsson_2.svg");
+  background-color: #01275b;
+  width: 135px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.microsoft {
+  background-image: url("https://weatherstack.com/site_images/client_microsoft.svg");
+  background-color: #eef2f5;
+  width: 250px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 175px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.schneider {
+  background-image: url("https://weatherstack.com/site_images/client_white_schneider.svg");
+  background-color: #009e4d;
+  width: 200px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 175px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.warnerbros {
+  background-image: url("https://weatherstack.com/site_images/client_white_warnerbros.svg");
+  background-color: #027ac2;
+  width: 190px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.grid_wawa {
+  background-image: url("https://weatherstack.com/site_images/client_white_wawa.svg");
+  background-color: #ee2e25;
+  width: 250px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.canda {
+  background-image: url("https://weatherstack.com/site_images/client_canda.svg");
+  background-color: #eef2f5;
+  width: 135px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.mckinsey {
+  background-image: url("https://weatherstack.com/site_images/client_mckinsey.svg");
+  background-color: #23477f;
+  width: 260px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.rimowa {
+  background-image: url("https://weatherstack.com/site_images/client_rimowa.svg");
+  background-color: #eef2f5;
+  width: 250px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 155px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* .cta {
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(230, 225, 225, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.sign_up::after {
+  content: "\f178";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+
+.cta a {
+  background-color: orange;
+  border-radius: 3px;
+  padding: 17px 15px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+
+.cta a:hover {
+  text-decoration: underline;
+} */
+
+/* footer {
+  padding: 50px 0;
+  background-color: rgb(31, 65, 159);
+}
+
+.other_details {
+  display: flex;
+}
+
+.media {
+  width: 180px;
+  padding-right: 128px;
+}
+
+.weather {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.social_logo {
+  width: 25px;
+  height: 25px;
+}
+
+.details {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.details .heading {
+  font-weight: 700;
+}
+
+.details ul {
+  list-style-type: none;
+  width: 196px;
+}
+
+.details ul li {
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+}
+
+.details ul li a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.details ul li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.details ul li a:hover {
+  text-decoration: underline;
+}
+
+.details li:first-of-type {
+  margin-bottom: 10px;
+}
+
+.terms {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.terms a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.term_details {
+  margin: 70px 0 15px;
+}
+
+.rights {
+  font-size: 12px;
+}
+
+.rights a {
+  text-decoration: underline;
+} */
+
+/* style for footer section is in style2.css */
+
+
+/* pricing page */
+.header_pricing {
+  text-align: center;
+  padding: 110px 0 210px;
+}
+
+.header_pricing h2 {
+  font-size: 32px;
+  color: white;
+}
+
+.billing {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  position: relative;
+}
+
+
+.monthly_billing,
+.yearly_billing {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 40px;
+  width: 130px;
+  font-size: 13px;
+}
+
+.monthly_billing {
+  background-color: #213170;
+  color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+.yearly_billing {
+  background-color: white;
+  color: black;
+  border-radius: 0 5px 5px 0;
+}
+
+.monthly_billing::before{
+  content: "\f14a";
+  font-family: "Font Awesome 6 Free";
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.yearly_billing::before {
+  content: "\f0c8";
+  font-family: "Font Awesome 6 Free";
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.disc_billing {
+  background-color: #8a9bae;
+  color: white;
+  text-decoration: none;
+  padding: 3px 8px 4px;
+  border-radius: 5px;
+  font-size: 12px;
+  position: absolute;
+  top: 25px;
+  left: 620px;
+}
+
+.prices {
+  padding: 40px 0 65px;
+  line-height: 1.4;
+}
+
+.levels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 884px;
+}
+
+.levels > li {
+  width: 213px;
+  background-color: #ebeff4;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.enterprise_level .price_top {
+  text-align: center;
+}
+
+.levels > li .heading, .enterprise_level .heading {
+  padding: 35px 0 15px;
+  font-size: 20px;
+}
+
+.levels p, .enterprise_level p {
+  padding: 10px;
+  height: 70px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.price_enter::before {
+  content: "\f1ad";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.price_fr::before{
+  content: "\f0c2";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+}
+.price_st::before{
+  content: "\f6c4";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+}
+.price_pr::before{
+  content: "\f185";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+}
+.price_bu::before{
+  content: "\f2dc";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+
+
+.sub_price {
+  font-size: 14px;
+}
+
+.cents {
+  vertical-align: top;
+}
+
+.sub_price span:first-child {
+  font-size: 20px;
+}
+
+.yearly {
+  font-size: 14px;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, .4);
+}
+
+.levels a, .enterprise_level a {
+  padding: 10px;
+  color: #848484;
+  background-color: #dde1e7;
+  display: block;
+  width: 170px;
+  margin: 40px 10px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.enterprise_level a {
+  text-align: center;
+  margin: 40px 20px 10px;
+  color: white;
+  background-color: orange;
+}
+
+.levels a:hover, .enterprise_level a:hover {
+  text-decoration: underline;
+}
+
+.prices .prof_price {
+  background-color: white;
+  box-shadow: 0 14px 30px 0 rgba(177, 177, 177, .4);
+  position: relative;
+  border-radius: 0 0 5px 5px;
+}
+
+.prices .prof_price a {
+  color: white;
+  background-color: #21366e;
+}
+
+.price_feature {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price_feature > li, .enterprise_level li {
+  width: 197px;
+  padding-left: 18px;
+  border-right: 1px solid #dde1e7;
+}
+
+.enterprise_level li {
+  border: none;
+}
+
+.price_feature ul li, .enterprise_level li {
+  padding-bottom: 13px;
+}
+
+.price_feature .standard_feature, .price_feature .prof_feature {
+  width: 197px;
+  padding: 0 5px 0 18px;
+  border-right: 1px solid #dde1e7;
+}
+
+.price_feature .business_feature {
+  border-right: none;
+}
+
+.call::before {
+  content: "\f095";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.support::before {
+  content: "\e533";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.time::before {
+  content: "\f2c9";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.each::before {
+  content: "\f4c0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.location_lookup::before {
+  content: "\f601";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.astronomy::before {
+  content: "\f7bf";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.hour::before {
+  content: "\f251";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.full::before {
+  content: "\f1da";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.forecast_data::before {
+  content: "\f0e9";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.language::before {
+  content: "\f1ab";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.queries::before {
+  content: "\f5fd";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.encryption::before {
+  content: "\e4f6";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.solution::before {
+  content: "\f013";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+
+.prices_container {
+  margin-top: -140px;
+}
+
+.price_center {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prices_container ul {
+  list-style-type: none;
+}
+
+.enterprise_level {
+  width: 230px;
+  background-color: #21366e;
+  color: white;
+  border-radius: 5px;
+}
+
+.custom_price {
+  font-size: 21px;
+}
+
+.enterprise_level .yearly {
+  color: white;
+}
+
+.enterprise_level ul {
+  margin-top: 40px;
+}
+
+.popular {
+  position: absolute;
+  color: white;
+  background-color: #21366e;
+  top: -28px;
+  width: 213px;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 0 0;
+  font-size: 14px;
+  height: 23px;
+}
+
+
+
+
+.trusted {
+  background-color: white;
+}
+
+.features_roundup {
+  padding: 50px 0 40px;
+  background-color: #eff2f5;
+  background-image: url("https://weatherstack.com/site_images/world_map_vector_objects.svg");
+  background-repeat: no-repeat;
+  background-size: 930px;
+  background-position: center 120px;
+}
+
+.features_roundup h4 {
+  margin: 0 auto 260px;
+  text-align: center;
+}
+
+.roundup_list > div {
+  padding: 20px 0 25px;
+  margin: 0 70px;
+  line-height: 1.4;
+}
+
+.roundup_list > div:first-child {
+  padding: 50px 0 25px;
+  border-top: 2px dashed #dde2e6;
+}
+
+
+.roundup_list > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.roundup_list .heading {
+  font-weight: 600;
+}
+
+.roundup_list p {
+  margin-top: 10px;
+  width: 500px;
+}
+
+.included {
+  padding: 18px 0 0 45px;
+  width: 185px;
+  border-left: 2px dashed #dde2e6;
+}
+
+.included_in {
+  display: block;
+  font-size: 12px;
+  background-color: #416376;
+  width: 80px;
+  color: white;
+  text-align: center;
+  padding: 3px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.realtime::before {
+  content: "\f2c9";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #a4b6c5;
+  width: 75px;
+  height: 84px;
+}
+
+.autocomplete::before {
+  content: "\f601";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #a4b6c5;
+  width: 75px;
+  height: 84px;
+}
+
+.lunar::before {
+  content: "\f7bf";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #a4b6c5;
+  width: 75px;
+  height: 84px;
+}
+
+.by_hour::before {
+  content: "\f251";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #a4b6c5;
+  width: 75px;
+  height: 84px;
+}
+
+.history::before {
+  content: "\f1da";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #a4b6c5;
+  width: 75px;
+  height: 84px;
+}
+
+.future::before {
+  content: "\f0e9";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #a4b6c5;
+  width: 75px;
+  height: 84px;
+}
+
+.languages::before {
+  content: "\f1ab";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #a4b6c5;
+  width: 75px;
+  height: 84px;
+}
+
+.bulk_feature::before {
+  content: "\f5fd";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #a4b6c5;
+  width: 75px;
+  height: 84px;
+}
+
+.roundup_left {
+    margin-left: -80px;
+}
+
+/* .faq {
+    padding: 40px 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fre_questions {
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    padding-bottom: 35px;
+}
+
+.fre_questions h3 {
+    color: #949494;
+    font-size: 16px;
+}
+
+.faq_left, .faq_right {
+    width: 500px;
+}
+
+.faq_left {
+  margin-right: 25px;
+}
+
+.faq_right {
+  margin-left: 25px;
+}
+
+.fre_questions h3 {
+  margin: 20px 0 10px;
+}
+
+.fre_questions p {
+  padding: 10px 0;
+  border-bottom: 1px solid #dedee1;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.fre_questions p::after {
+  content: "\2b";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  right: 10px;
+  color: #aaadb1;
+}
+
+.fre_questions p:hover::after {
+  color: rgb(62, 133, 204);
+}
+
+.faq_data, .faq_payment, .faq_access {
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.faq a {
+  padding: 15px 10px 10px 15px;
+  font-size: 14px;
+  color: #7e8e9e;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.faq a::after {
+  content: "\f178";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-left: 15px;
+} */

@@ -1,0 +1,219 @@
+@charset "UTF-8";
+/* cta in main page */
+/* footer in main and pricing page */
+.cta {
+  text-align: center;
+  padding: 45px 30px 50px;
+  background-color: #eef2f5;
+}
+
+.cta .sign_up {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.cta .sign_up::after {
+  content: "\f178";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+}
+
+.cta a {
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
+  padding: 17px 15px;
+  background-color: orange;
+  border-radius: 3px;
+}
+
+.cta a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #2c56c9;
+  line-height: 1.4;
+  color: white;
+  padding: 50px 0;
+}
+
+footer .other_details {
+  display: flex;
+}
+
+footer .other_details .media {
+  height: 160px;
+  width: 308px;
+}
+
+footer .other_details .media .weather_logo {
+  width: 197px;
+  height: 35px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer .other_details .media .github_logo img {
+  width: 25px;
+  height: 25px;
+  padding: 0 3px;
+}
+
+footer .other_details .media .facebook_logo img {
+  width: 25px;
+  height: 25px;
+  padding: 0 3px;
+}
+
+footer .other_details .media .instagram_logo img {
+  width: 25px;
+  height: 25px;
+  padding: 0 3px;
+}
+
+footer .other_details .media .youtube_logo img {
+  width: 25px;
+  height: 25px;
+  padding: 0 3px;
+}
+
+footer .other_details .media .twitter_logo img {
+  width: 25px;
+  height: 25px;
+  padding: 0 3px;
+}
+
+footer .other_details .media .linkedin_logo img {
+  width: 25px;
+  height: 25px;
+  padding: 0 3px;
+}
+
+footer .other_details .details {
+  display: flex;
+  font-size: 14px;
+}
+
+footer .other_details .details ul {
+  list-style-type: none;
+}
+
+footer .other_details .details ul li {
+  width: 196px;
+  height: 30px;
+}
+
+footer .other_details .details ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .other_details .details ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .other_details .details ul .heading {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+footer .terms .term_details, footer .terms .rights {
+  text-align: center;
+  margin: 70px 0 15px;
+  font-size: 14px;
+}
+
+footer .terms .term_details a, footer .terms .rights a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .terms .term_details a:hover, footer .terms .rights a:hover {
+  text-decoration: underline;
+}
+
+footer .terms .rights {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* FAQ section in pricing page */
+.faq {
+  line-height: 1.4;
+  padding: 40px 10px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.faq .fre_questions {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .fre_questions .faq_left, .faq .fre_questions .faq_right {
+  width: 500px;
+  margin-right: 25px;
+}
+
+.faq .fre_questions .faq_left .faq_data, .faq .fre_questions .faq_right .faq_data {
+  margin-bottom: 35px;
+}
+
+.faq .fre_questions .faq_left .faq_data h3, .faq .fre_questions .faq_right .faq_data h3 {
+  color: #949494;
+  margin: 20px 0 10px;
+  font-size: 18px;
+}
+
+.faq .fre_questions .faq_left .faq_data p, .faq .fre_questions .faq_right .faq_data p {
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #dedee1;
+}
+
+.faq .fre_questions .faq_left .faq_data p::after, .faq .fre_questions .faq_right .faq_data p::after {
+  content: "+";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  margin: 0 20px;
+  float: right;
+  color: #949494;
+  margin: 0;
+}
+
+.faq .fre_questions .faq_left .faq_data p:hover::after, .faq .fre_questions .faq_right .faq_data p:hover::after {
+  color: #406d7b;
+}
+
+.faq .fre_questions .faq_left .faq_data p:hover, .faq .fre_questions .faq_right .faq_data p:hover {
+  cursor: pointer;
+}
+
+.faq .fre_questions .faq_left > a, .faq .fre_questions .faq_right > a {
+  color: #7e8e9e;
+  text-decoration: none;
+  position: relative;
+}
+
+.faq .fre_questions .faq_left > a::after, .faq .fre_questions .faq_right > a::after {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  margin: 0 20px;
+  position: absolute;
+  top: 0;
+}
+
+.faq .fre_questions .faq_left > a:hover, .faq .fre_questions .faq_right > a:hover {
+  text-decoration: underline;
+}
+
+.faq .fre_questions .faq_left > a:hover::after, .faq .fre_questions .faq_right > a:hover::after {
+  text-decoration: none;
+}
